@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Goyal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="VIDEO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Navbars..!!..!! -->
+    <nav class="navbar">
+        <a href="#" class="logo">Profile</a>
+        <ul id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Resume</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        </li>
+        
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- Home Section..!! -->
+    <section id="home" class="home">
+        <!-- image -->
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="PHOTO.jpg" alt="" >
+
+                </div>
+            </div>
+        </div>
+        <div class="home-info">
+            <h1>Aryan Goyal </h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+                <span style="--i:3;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:2;" data-text="Designer">Designer</span>
+                <span style="--i:1;" data-text="Engineer">Engineer</span>
+            </h2>
+            <p>~ A passionate and dedicated junior web developer ,driven by the ever-evolving world of technology and its limitless possibilities.!</p>
+            <div class="btn-sci">
+                <a href="Resume[1].pdf" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://github.com/aryangoyal001" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aryan-goyal-96077a298/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                      <a href="https://www.instagram.com/im_aryan_goyal001/?hl=en" target="_blank" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com/im_aryan_goyal001/?hl=en" target="_blank" aria-label="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                        
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section..!! -->
+    <section id="about" class="about">
+        
+        <div class="about-content">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <p>Hello! I am Aryan Goyal, an aspiring software developer with a passion for technology and innovation.
+                Currently pursuing my studies in computer science, I enjoy solving real-world problems through code.
+                I’m curious, self-driven, and constantly learning new technologies to stay ahead in the digital world.
+            </p>
+            
+            <div class="btn-box">
+                <a href="#contact" class="btn">Read More!</a>
+            </div>
+        </div>
+          <div class="img-about" >
+            <img src="MY PHOTO.jpg">
+        </div>
+    </section>
+
+    <!-- Skills Section..!! -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>Technical and Professional</span>
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>100%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JAVASCRIPT</p>
+                        <P>60%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>MY SQL</p>
+                        <P>80%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="mysql"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-right">
+             <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="100" data-percent="95"><div class="points marked" style="--i:0; --rot:4.5deg"></div><div class="points marked" style="--i:1; --rot:4.5deg"></div><div class="points marked" style="--i:2; --rot:4.5deg"></div><div class="points marked" style="--i:3; --rot:4.5deg"></div><div class="points marked" style="--i:4; --rot:4.5deg"></div><div class="points marked" style="--i:5; --rot:4.5deg"></div><div class="points marked" style="--i:6; --rot:4.5deg"></div><div class="points marked" style="--i:7; --rot:4.5deg"></div><div class="points marked" style="--i:8; --rot:4.5deg"></div><div class="points marked" style="--i:9; --rot:4.5deg"></div><div class="points marked" style="--i:10; --rot:4.5deg"></div><div class="points marked" style="--i:11; --rot:4.5deg"></div><div class="points marked" style="--i:12; --rot:4.5deg"></div><div class="points marked" style="--i:13; --rot:4.5deg"></div><div class="points marked" style="--i:14; --rot:4.5deg"></div><div class="points marked" style="--i:15; --rot:4.5deg"></div><div class="points marked" style="--i:16; --rot:4.5deg"></div><div class="points marked" style="--i:17; --rot:4.5deg"></div><div class="points marked" style="--i:18; --rot:4.5deg"></div><div class="points marked" style="--i:19; --rot:4.5deg"></div><div class="points marked" style="--i:20; --rot:4.5deg"></div><div class="points marked" style="--i:21; --rot:4.5deg"></div><div class="points marked" style="--i:22; --rot:4.5deg"></div><div class="points marked" style="--i:23; --rot:4.5deg"></div><div class="points marked" style="--i:24; --rot:4.5deg"></div><div class="points marked" style="--i:25; --rot:4.5deg"></div><div class="points marked" style="--i:26; --rot:4.5deg"></div><div class="points marked" style="--i:27; --rot:4.5deg"></div><div class="points marked" style="--i:28; --rot:4.5deg"></div><div class="points marked" style="--i:29; --rot:4.5deg"></div><div class="points marked" style="--i:30; --rot:4.5deg"></div><div class="points marked" style="--i:31; --rot:4.5deg"></div><div class="points marked" style="--i:32; --rot:4.5deg"></div><div class="points marked" style="--i:33; --rot:4.5deg"></div><div class="points marked" style="--i:34; --rot:4.5deg"></div><div class="points marked" style="--i:35; --rot:4.5deg"></div><div class="points marked" style="--i:36; --rot:4.5deg"></div><div class="points marked" style="--i:37; --rot:4.5deg"></div><div class="points marked" style="--i:38; --rot:4.5deg"></div><div class="points marked" style="--i:39; --rot:4.5deg"></div><div class="points marked" style="--i:40; --rot:4.5deg"></div><div class="points marked" style="--i:41; --rot:4.5deg"></div><div class="points marked" style="--i:42; --rot:4.5deg"></div><div class="points marked" style="--i:43; --rot:4.5deg"></div><div class="points marked" style="--i:44; --rot:4.5deg"></div><div class="points marked" style="--i:45; --rot:4.5deg"></div><div class="points marked" style="--i:46; --rot:4.5deg"></div><div class="points marked" style="--i:47; --rot:4.5deg"></div><div class="points marked" style="--i:48; --rot:4.5deg"></div><div class="points marked" style="--i:49; --rot:4.5deg"></div><div class="points marked" style="--i:50; --rot:4.5deg"></div><div class="points marked" style="--i:51; --rot:4.5deg"></div><div class="points marked" style="--i:52; --rot:4.5deg"></div><div class="points marked" style="--i:53; --rot:4.5deg"></div><div class="points marked" style="--i:54; --rot:4.5deg"></div><div class="points marked" style="--i:55; --rot:4.5deg"></div><div class="points marked" style="--i:56; --rot:4.5deg"></div><div class="points marked" style="--i:57; --rot:4.5deg"></div><div class="points marked" style="--i:58; --rot:4.5deg"></div><div class="points marked" style="--i:59; --rot:4.5deg"></div><div class="points marked" style="--i:60; --rot:4.5deg"></div><div class="points marked" style="--i:61; --rot:4.5deg"></div><div class="points marked" style="--i:62; --rot:4.5deg"></div><div class="points marked" style="--i:63; --rot:4.5deg"></div><div class="points marked" style="--i:64; --rot:4.5deg"></div><div class="points marked" style="--i:65; --rot:4.5deg"></div><div class="points marked" style="--i:66; --rot:4.5deg"></div><div class="points marked" style="--i:67; --rot:4.5deg"></div><div class="points marked" style="--i:68; --rot:4.5deg"></div><div class="points marked" style="--i:69; --rot:4.5deg"></div><div class="points marked" style="--i:70; --rot:4.5deg"></div><div class="points marked" style="--i:71; --rot:4.5deg"></div><div class="points " style="--i:72; --rot:4.5deg"></div><div class="points " style="--i:73; --rot:4.5deg"></div><div class="points " style="--i:74; --rot:4.5deg"></div><div class="points " style="--i:75; --rot:4.5deg"></div><div class="points " style="--i:76; --rot:4.5deg"></div><div class="points " style="--i:77; --rot:4.5deg"></div><div class="points " style="--i:78; --rot:4.5deg"></div><div class="points " style="--i:79; --rot:4.5deg"></div></div>
+                        <div class="text">
+                            <big>95%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="100" data-percent="85"><div class="points marked" style="--i:0; --rot:4.5deg"></div><div class="points marked" style="--i:1; --rot:4.5deg"></div><div class="points marked" style="--i:2; --rot:4.5deg"></div><div class="points marked" style="--i:3; --rot:4.5deg"></div><div class="points marked" style="--i:4; --rot:4.5deg"></div><div class="points marked" style="--i:5; --rot:4.5deg"></div><div class="points marked" style="--i:6; --rot:4.5deg"></div><div class="points marked" style="--i:7; --rot:4.5deg"></div><div class="points marked" style="--i:8; --rot:4.5deg"></div><div class="points marked" style="--i:9; --rot:4.5deg"></div><div class="points marked" style="--i:10; --rot:4.5deg"></div><div class="points marked" style="--i:11; --rot:4.5deg"></div><div class="points marked" style="--i:12; --rot:4.5deg"></div><div class="points marked" style="--i:13; --rot:4.5deg"></div><div class="points marked" style="--i:14; --rot:4.5deg"></div><div class="points marked" style="--i:15; --rot:4.5deg"></div><div class="points marked" style="--i:16; --rot:4.5deg"></div><div class="points marked" style="--i:17; --rot:4.5deg"></div><div class="points marked" style="--i:18; --rot:4.5deg"></div><div class="points marked" style="--i:19; --rot:4.5deg"></div><div class="points marked" style="--i:20; --rot:4.5deg"></div><div class="points marked" style="--i:21; --rot:4.5deg"></div><div class="points marked" style="--i:22; --rot:4.5deg"></div><div class="points marked" style="--i:23; --rot:4.5deg"></div><div class="points marked" style="--i:24; --rot:4.5deg"></div><div class="points marked" style="--i:25; --rot:4.5deg"></div><div class="points marked" style="--i:26; --rot:4.5deg"></div><div class="points marked" style="--i:27; --rot:4.5deg"></div><div class="points marked" style="--i:28; --rot:4.5deg"></div><div class="points marked" style="--i:29; --rot:4.5deg"></div><div class="points marked" style="--i:30; --rot:4.5deg"></div><div class="points marked" style="--i:31; --rot:4.5deg"></div><div class="points marked" style="--i:32; --rot:4.5deg"></div><div class="points marked" style="--i:33; --rot:4.5deg"></div><div class="points marked" style="--i:34; --rot:4.5deg"></div><div class="points marked" style="--i:35; --rot:4.5deg"></div><div class="points marked" style="--i:36; --rot:4.5deg"></div><div class="points marked" style="--i:37; --rot:4.5deg"></div><div class="points marked" style="--i:38; --rot:4.5deg"></div><div class="points marked" style="--i:39; --rot:4.5deg"></div><div class="points marked" style="--i:40; --rot:4.5deg"></div><div class="points marked" style="--i:41; --rot:4.5deg"></div><div class="points marked" style="--i:42; --rot:4.5deg"></div><div class="points marked" style="--i:43; --rot:4.5deg"></div><div class="points marked" style="--i:44; --rot:4.5deg"></div><div class="points marked" style="--i:45; --rot:4.5deg"></div><div class="points marked" style="--i:46; --rot:4.5deg"></div><div class="points marked" style="--i:47; --rot:4.5deg"></div><div class="points marked" style="--i:48; --rot:4.5deg"></div><div class="points marked" style="--i:49; --rot:4.5deg"></div><div class="points marked" style="--i:50; --rot:4.5deg"></div><div class="points marked" style="--i:51; --rot:4.5deg"></div><div class="points marked" style="--i:52; --rot:4.5deg"></div><div class="points marked" style="--i:53; --rot:4.5deg"></div><div class="points marked" style="--i:54; --rot:4.5deg"></div><div class="points marked" style="--i:55; --rot:4.5deg"></div><div class="points marked" style="--i:56; --rot:4.5deg"></div><div class="points marked" style="--i:57; --rot:4.5deg"></div><div class="points marked" style="--i:58; --rot:4.5deg"></div><div class="points marked" style="--i:59; --rot:4.5deg"></div><div class="points marked" style="--i:60; --rot:4.5deg"></div><div class="points marked" style="--i:61; --rot:4.5deg"></div><div class="points marked" style="--i:62; --rot:4.5deg"></div><div class="points marked" style="--i:63; --rot:4.5deg"></div><div class="points marked" style="--i:64; --rot:4.5deg"></div><div class="points marked" style="--i:65; --rot:4.5deg"></div><div class="points marked" style="--i:66; --rot:4.5deg"></div><div class="points marked" style="--i:67; --rot:4.5deg"></div><div class="points " style="--i:68; --rot:4.5deg"></div><div class="points " style="--i:69; --rot:4.5deg"></div><div class="points " style="--i:70; --rot:4.5deg"></div><div class="points " style="--i:71; --rot:4.5deg"></div><div class="points " style="--i:72; --rot:4.5deg"></div><div class="points " style="--i:73; --rot:4.5deg"></div><div class="points " style="--i:74; --rot:4.5deg"></div><div class="points " style="--i:75; --rot:4.5deg"></div><div class="points " style="--i:76; --rot:4.5deg"></div><div class="points " style="--i:77; --rot:4.5deg"></div><div class="points " style="--i:78; --rot:4.5deg"></div><div class="points " style="--i:79; --rot:4.5deg"></div></div>
+                        <div class="text">
+                            <big>85%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="100" data-percent="80"><div class="points marked" style="--i:0; --rot:4.5deg"></div><div class="points marked" style="--i:1; --rot:4.5deg"></div><div class="points marked" style="--i:2; --rot:4.5deg"></div><div class="points marked" style="--i:3; --rot:4.5deg"></div><div class="points marked" style="--i:4; --rot:4.5deg"></div><div class="points marked" style="--i:5; --rot:4.5deg"></div><div class="points marked" style="--i:6; --rot:4.5deg"></div><div class="points marked" style="--i:7; --rot:4.5deg"></div><div class="points marked" style="--i:8; --rot:4.5deg"></div><div class="points marked" style="--i:9; --rot:4.5deg"></div><div class="points marked" style="--i:10; --rot:4.5deg"></div><div class="points marked" style="--i:11; --rot:4.5deg"></div><div class="points marked" style="--i:12; --rot:4.5deg"></div><div class="points marked" style="--i:13; --rot:4.5deg"></div><div class="points marked" style="--i:14; --rot:4.5deg"></div><div class="points marked" style="--i:15; --rot:4.5deg"></div><div class="points marked" style="--i:16; --rot:4.5deg"></div><div class="points marked" style="--i:17; --rot:4.5deg"></div><div class="points marked" style="--i:18; --rot:4.5deg"></div><div class="points marked" style="--i:19; --rot:4.5deg"></div><div class="points marked" style="--i:20; --rot:4.5deg"></div><div class="points marked" style="--i:21; --rot:4.5deg"></div><div class="points marked" style="--i:22; --rot:4.5deg"></div><div class="points marked" style="--i:23; --rot:4.5deg"></div><div class="points marked" style="--i:24; --rot:4.5deg"></div><div class="points marked" style="--i:25; --rot:4.5deg"></div><div class="points marked" style="--i:26; --rot:4.5deg"></div><div class="points marked" style="--i:27; --rot:4.5deg"></div><div class="points marked" style="--i:28; --rot:4.5deg"></div><div class="points marked" style="--i:29; --rot:4.5deg"></div><div class="points marked" style="--i:30; --rot:4.5deg"></div><div class="points marked" style="--i:31; --rot:4.5deg"></div><div class="points marked" style="--i:32; --rot:4.5deg"></div><div class="points marked" style="--i:33; --rot:4.5deg"></div><div class="points marked" style="--i:34; --rot:4.5deg"></div><div class="points marked" style="--i:35; --rot:4.5deg"></div><div class="points marked" style="--i:36; --rot:4.5deg"></div><div class="points marked" style="--i:37; --rot:4.5deg"></div><div class="points marked" style="--i:38; --rot:4.5deg"></div><div class="points marked" style="--i:39; --rot:4.5deg"></div><div class="points marked" style="--i:40; --rot:4.5deg"></div><div class="points marked" style="--i:41; --rot:4.5deg"></div><div class="points marked" style="--i:42; --rot:4.5deg"></div><div class="points marked" style="--i:43; --rot:4.5deg"></div><div class="points marked" style="--i:44; --rot:4.5deg"></div><div class="points marked" style="--i:45; --rot:4.5deg"></div><div class="points marked" style="--i:46; --rot:4.5deg"></div><div class="points marked" style="--i:47; --rot:4.5deg"></div><div class="points marked" style="--i:48; --rot:4.5deg"></div><div class="points marked" style="--i:49; --rot:4.5deg"></div><div class="points marked" style="--i:50; --rot:4.5deg"></div><div class="points marked" style="--i:51; --rot:4.5deg"></div><div class="points marked" style="--i:52; --rot:4.5deg"></div><div class="points marked" style="--i:53; --rot:4.5deg"></div><div class="points marked" style="--i:54; --rot:4.5deg"></div><div class="points marked" style="--i:55; --rot:4.5deg"></div><div class="points marked" style="--i:56; --rot:4.5deg"></div><div class="points marked" style="--i:57; --rot:4.5deg"></div><div class="points marked" style="--i:58; --rot:4.5deg"></div><div class="points marked" style="--i:59; --rot:4.5deg"></div><div class="points marked" style="--i:60; --rot:4.5deg"></div><div class="points marked" style="--i:61; --rot:4.5deg"></div><div class="points marked" style="--i:62; --rot:4.5deg"></div><div class="points marked" style="--i:63; --rot:4.5deg"></div><div class="points " style="--i:64; --rot:4.5deg"></div><div class="points " style="--i:65; --rot:4.5deg"></div><div class="points " style="--i:66; --rot:4.5deg"></div><div class="points " style="--i:67; --rot:4.5deg"></div><div class="points " style="--i:68; --rot:4.5deg"></div><div class="points " style="--i:69; --rot:4.5deg"></div><div class="points " style="--i:70; --rot:4.5deg"></div><div class="points " style="--i:71; --rot:4.5deg"></div><div class="points " style="--i:72; --rot:4.5deg"></div><div class="points " style="--i:73; --rot:4.5deg"></div><div class="points " style="--i:74; --rot:4.5deg"></div><div class="points " style="--i:75; --rot:4.5deg"></div><div class="points " style="--i:76; --rot:4.5deg"></div><div class="points " style="--i:77; --rot:4.5deg"></div><div class="points " style="--i:78; --rot:4.5deg"></div><div class="points " style="--i:79; --rot:4.5deg"></div></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="100" data-percent="90"><div class="points marked" style="--i:0; --rot:4.5deg"></div><div class="points marked" style="--i:1; --rot:4.5deg"></div><div class="points marked" style="--i:2; --rot:4.5deg"></div><div class="points marked" style="--i:3; --rot:4.5deg"></div><div class="points marked" style="--i:4; --rot:4.5deg"></div><div class="points marked" style="--i:5; --rot:4.5deg"></div><div class="points marked" style="--i:6; --rot:4.5deg"></div><div class="points marked" style="--i:7; --rot:4.5deg"></div><div class="points marked" style="--i:8; --rot:4.5deg"></div><div class="points marked" style="--i:9; --rot:4.5deg"></div><div class="points marked" style="--i:10; --rot:4.5deg"></div><div class="points marked" style="--i:11; --rot:4.5deg"></div><div class="points marked" style="--i:12; --rot:4.5deg"></div><div class="points marked" style="--i:13; --rot:4.5deg"></div><div class="points marked" style="--i:14; --rot:4.5deg"></div><div class="points marked" style="--i:15; --rot:4.5deg"></div><div class="points marked" style="--i:16; --rot:4.5deg"></div><div class="points marked" style="--i:17; --rot:4.5deg"></div><div class="points marked" style="--i:18; --rot:4.5deg"></div><div class="points marked" style="--i:19; --rot:4.5deg"></div><div class="points marked" style="--i:20; --rot:4.5deg"></div><div class="points marked" style="--i:21; --rot:4.5deg"></div><div class="points marked" style="--i:22; --rot:4.5deg"></div><div class="points marked" style="--i:23; --rot:4.5deg"></div><div class="points marked" style="--i:24; --rot:4.5deg"></div><div class="points marked" style="--i:25; --rot:4.5deg"></div><div class="points marked" style="--i:26; --rot:4.5deg"></div><div class="points marked" style="--i:27; --rot:4.5deg"></div><div class="points marked" style="--i:28; --rot:4.5deg"></div><div class="points marked" style="--i:29; --rot:4.5deg"></div><div class="points marked" style="--i:30; --rot:4.5deg"></div><div class="points marked" style="--i:31; --rot:4.5deg"></div><div class="points marked" style="--i:32; --rot:4.5deg"></div><div class="points marked" style="--i:33; --rot:4.5deg"></div><div class="points marked" style="--i:34; --rot:4.5deg"></div><div class="points marked" style="--i:35; --rot:4.5deg"></div><div class="points marked" style="--i:36; --rot:4.5deg"></div><div class="points marked" style="--i:37; --rot:4.5deg"></div><div class="points marked" style="--i:38; --rot:4.5deg"></div><div class="points marked" style="--i:39; --rot:4.5deg"></div><div class="points marked" style="--i:40; --rot:4.5deg"></div><div class="points marked" style="--i:41; --rot:4.5deg"></div><div class="points marked" style="--i:42; --rot:4.5deg"></div><div class="points marked" style="--i:43; --rot:4.5deg"></div><div class="points marked" style="--i:44; --rot:4.5deg"></div><div class="points marked" style="--i:45; --rot:4.5deg"></div><div class="points marked" style="--i:46; --rot:4.5deg"></div><div class="points marked" style="--i:47; --rot:4.5deg"></div><div class="points marked" style="--i:48; --rot:4.5deg"></div><div class="points marked" style="--i:49; --rot:4.5deg"></div><div class="points marked" style="--i:50; --rot:4.5deg"></div><div class="points marked" style="--i:51; --rot:4.5deg"></div><div class="points marked" style="--i:52; --rot:4.5deg"></div><div class="points marked" style="--i:53; --rot:4.5deg"></div><div class="points marked" style="--i:54; --rot:4.5deg"></div><div class="points marked" style="--i:55; --rot:4.5deg"></div><div class="points marked" style="--i:56; --rot:4.5deg"></div><div class="points marked" style="--i:57; --rot:4.5deg"></div><div class="points marked" style="--i:58; --rot:4.5deg"></div><div class="points marked" style="--i:59; --rot:4.5deg"></div><div class="points marked" style="--i:60; --rot:4.5deg"></div><div class="points marked" style="--i:61; --rot:4.5deg"></div><div class="points marked" style="--i:62; --rot:4.5deg"></div><div class="points marked" style="--i:63; --rot:4.5deg"></div><div class="points marked" style="--i:64; --rot:4.5deg"></div><div class="points marked" style="--i:65; --rot:4.5deg"></div><div class="points marked" style="--i:66; --rot:4.5deg"></div><div class="points marked" style="--i:67; --rot:4.5deg"></div><div class="points marked" style="--i:68; --rot:4.5deg"></div><div class="points marked" style="--i:69; --rot:4.5deg"></div><div class="points " style="--i:70; --rot:4.5deg"></div><div class="points " style="--i:71; --rot:4.5deg"></div><div class="points " style="--i:72; --rot:4.5deg"></div><div class="points " style="--i:73; --rot:4.5deg"></div><div class="points " style="--i:74; --rot:4.5deg"></div><div class="points " style="--i:75; --rot:4.5deg"></div><div class="points " style="--i:76; --rot:4.5deg"></div><div class="points " style="--i:77; --rot:4.5deg"></div><div class="points " style="--i:78; --rot:4.5deg"></div><div class="points " style="--i:79; --rot:4.5deg"></div></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+         <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <h2>Projects</h2>
+
+            <h3>A Web Calculator</h3>
+            <p>I created a basic web-based calculator using HTML, **CSS, and *JavaScript.
+The application allows users to perform basic arithmetic operations(+,-,,/) with a responsive and clear user interface.</p>
+            <a href="https://github.com/aryangoyal001/calculator">View Source Code</a>
+             <p></p>
+             <a href="https://aryangoyal001.github.io/calculator/">View Project</a>
+
+              <h3>StopWatch</h3>
+            <p>I created a Stopwatch⏱ Web Application using HTML,CSS and JavaScript.
+It allows users to start, pause, reset the stopwatch, and record lap times. The application is designed to be user-friendly and responsive, making it suitable for use on various devices..</p>
+            <a href="https://github.com/aryangoyal001/PRODIGY_WD_02">View Source Code</a>
+            <p></p>
+             <a href="https://aryangoyal001.github.io/PRODIGY_WD_02/">View Project</a>
+
+            <h3>Hangman Game (Python)</h3>
+            <p>A command-line based hangman game built in Python with difficulty modes and smooth user interaction.</p>
+            <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_01">View Source Code</a>
+             <p></p>
+            <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_01">View Project</a>
+
+            <h3>Stock Portfolio Tracker</h3>
+            <p>A basic stock tracking tool in Python that calculates total investment from predefined stock values.</p>
+            <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_02">View Source Code</a>
+             <p></p>
+             <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_02">View Project</a>
+
+            
+            <h3>SimpleBot</h3>
+            <p>SimpleBot is a basic, rule-based chatbot built using Python and Tkinter for its graphical interface. It mimics a simple conversation by matching user input to predefined rules. Designed for beginners, this project demonstrates core programming concepts like conditionals, loops, functions, and GUI design.</p>
+            <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_04">View Source Code</a>
+             <p></p>
+             <a href="https://github.com/aryangoyal001/CodeAlpha_Python-Programming_04">View Project</a>
+ 
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="main-text">
+            <span>Ask Me Question</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <form action="#">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email">
+            <input type="text" placeholder="Your Address">
+            <input type="number" placeholder="Phone Number">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="btn-box formbtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+
+        </form>
+        <h2>Send me email at: </h2>
+<a href="mailto:aryangoyal2352007@gmail.com">aryangoyal2352007@gmail.com</a>
+  <p>
+                LinkedIn: <a href="https://www.linkedin.com/in/aryan-goyal-96077a298/" target="_blank">linkedin.com</a><br>
+                GitHub: <a href="https://github.com/aryangoyal001" target="_blank">github.com</a>
+            </p>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <p>Copyright &copy; 2025 by Aryan Goyal || All Rights Reserved</p>
+    </footer>
+
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
