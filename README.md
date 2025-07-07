@@ -3,7 +3,7 @@
 Welcome to my personal developer portfolio! 🚀 This is a responsive and animated website built to showcase my skills, projects, and professional profile. It features a modern UI with a video background, smooth animations, and interactive sections.
 
 ## 🌐 Live Preview [Demo]
-[Click to View Website](https://aryangoyal001.github.io/portfolio/)
+[Click to View Website](https://aryangoyal001.github.io/Portfolio/)
 
 ---
 
