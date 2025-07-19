@@ -796,35 +796,61 @@ overflow: hidden;
 
 
 /* Portfolio Page */
-
 /* Portfolio Section Styles */
 .portfolio {
-    padding: 60px 20px;
-    color: #fff;
+    padding: 60px 5vw;
+    /* background-color: #f4f4f4; */
+    color: #333;
     animation: fadeIn 1.5s ease;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .portfolio h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 30px;
     color: #3877FF;
 }
 
-.portfolio h3 {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-top: 20px;
+/* Bootstrap-based project cards */
+.project-cards .card {
+    animation: fadeIn 1s ease-in-out;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-.portfolio p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 10px 0;
+.project-cards .card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
-.portfolio a {
-color: #3877FF;
+.project-cards .card-body {
+    padding: 1.25rem;
+}
+
+.project-cards .btn {
+    background-color: #3877FF;
+    border: none;
+}
+
+.project-cards .btn:hover {
+    background-color: #2f65d6;
+}
+
+/* Responsive Portfolio Grid */
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 40px 4vw;
+    }
+
+    .portfolio a {
+        width: auto;
+    }
 }
 
 /* Animation */
