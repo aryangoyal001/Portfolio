@@ -13,6 +13,15 @@
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
+document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const menu = document.querySelector('.navbar-collapse');
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    });
+});
+
   /**
    * Hide mobile nav on same-page/hash links
    */
