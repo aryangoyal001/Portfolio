@@ -8,38 +8,83 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* Mobile Navbar */
-@media (max-width: 768px) {
-    .navbar-collapse {
-        background-color: rgba(31, 36, 45, 0.98); /* Dark semi-transparent */
-        padding: 15px;
-        border-radius: 8px;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        width: 220px;
-        max-height: 80vh;
-        overflow-y: auto;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-        z-index: 999;
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .navbar-nav .nav-link {
-        color: white;
-        padding: 8px 12px;
-        border-radius: 4px;
-        transition: background 0.3s ease;
-    }
-
-    .navbar-nav .nav-link:hover {
-        background-color: rgba(56, 119, 255, 0.2);
-    }
+/* Navbar Base */
+.app-header {
+  background: #1f242d;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
+
+.app-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header .logo a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3877FF;
+}
+
+.app-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.app-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.app-header nav ul li a:hover,
+.app-header nav ul li a.active {
+  color: #3877FF;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  .app-header nav {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background: #1f242d;
+    width: 220px;
+    padding: 15px;
+    transition: right 0.3s ease;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .app-header nav.show {
+    right: 0;
+  }
+
+  .app-header nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 
 :root {
     --text-color: #0a0a0a;
