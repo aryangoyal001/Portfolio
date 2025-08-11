@@ -4,6 +4,13 @@
   /**
    * Header toggle
    */
+const toggleBtn = document.getElementById("menu-toggle");
+const nav = document.getElementById("navbar");
+
+toggleBtn.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
   const headerToggleBtn = document.querySelector('.header-toggle');
 
   function headerToggle() {
